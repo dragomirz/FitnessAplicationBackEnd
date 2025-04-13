@@ -7,8 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const url = "mongodb://0.0.0.0:27017";
-const client = new MongoClient(url);
+const client = new MongoClient(process.env.MONGO_URL);
 client.connect().then(() => console.log("Connected to MongoDB!")); // Това съобщение е само за конзолата на сървъра
 const db = client.db("main");
 
