@@ -1,0 +1,21 @@
+{
+  "name": "fitify",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "crypto": "^1.0.1",
+    "debug": "^4.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fitify": "file:",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.13.0"
+  }
+}
